@@ -25,7 +25,7 @@ app.get("/",(req,res)=>{
 app.use("/api/auth",authRoutes)
 app.use("/api/product",productRoutes)
 
-const cartRoutes=require("./routes/CartRoutes")
+const CartRoutes=require("./routes/CartRoutes")
 app.use("/api/cart",CartRoutes)
 
 app.listen(5000,()=>console.log("server runns on port 5000"))
